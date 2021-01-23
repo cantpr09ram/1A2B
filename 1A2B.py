@@ -1,4 +1,4 @@
-'''亂樹生成'''
+'''亂數生成'''
 import random
 items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 random.shuffle(items)
@@ -18,7 +18,7 @@ while True:
     see=0
     if len(type_in)!=4:#是否事由是個東西組成
         see+=1
-    for y in range(4):#剪成是否為數字
+    for y in range(4):#檢查是否為數字
         try:
             int(type_in[y])
         except(ValueError,TypeError,IndexError):
